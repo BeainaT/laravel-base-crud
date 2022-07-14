@@ -7,9 +7,7 @@
     <title>@yield('title', 'Comics')</title>
 </head>
 <body>
-    <header>
-        @include('partials.header')
-    </header>
+    @include('partials.header')
     <main>
         @yield('page-content')
     </main>
