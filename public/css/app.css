@@ -99,3 +99,8 @@ button {
   color: #000;
 }
 
+.alert {
+  color: var(--danger_color);
+  background-color: #fff;
+}
+

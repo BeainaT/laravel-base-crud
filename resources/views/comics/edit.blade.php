@@ -13,8 +13,20 @@
         <input type="number" id="price" name="price" value="{{$comic->price}}">
         <label for="serie">Serie</label>
         <input type="text" id="serie" name="series" value="{{$comic->series}}">
+        <label for="type">Tipologia</label>
+        <input type="text" id="type" name="type" value="{{$comic->type}}">
         <label for="date">data</label>
         <input type="text" id="date" name="sale_date" value="{{$comic->sale_date}}">
         <button type="submit" class="add">modifica</button>
     </form>
+
+    @if ($errors->any())
+        <div class="alert">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 @endsection

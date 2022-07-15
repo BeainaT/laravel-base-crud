@@ -12,8 +12,20 @@
         <input type="number" id="price" name="price">
         <label for="serie">Serie</label>
         <input type="text" id="serie" name="series">
-        <label for="date">data</label>
+        <label for="type">Tipologia</label>
+        <input type="text" id="type" name="type">
+        <label for="date">Data</label>
         <input type="text" id="date" name="sale_date">
         <button type="submit" class="add">crea</button>
     </form>
+
+    @if ($errors->any())
+        <div class="alert">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 @endsection
