@@ -1,9 +1,8 @@
 <header>
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Add comic</a></li>
-            <li><a href="">view comic</a></li>
+            <li><a href="{{route('comics.index')}}">Home</a></li>
+            <li><a href="{{route('comics.create')}}">Add comic</a></li>
         </ul>
     </nav>
 </header>

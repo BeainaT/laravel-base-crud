@@ -1,0 +1,19 @@
+@extends('layouts.base')
+@section('page-content')
+    <form action="{{route('comics.store')}}" method="POST">
+        @csrf
+        <label for="title">Titolo</label>
+        <input type="text" id="title" name="title">        
+        <label for="desc">Descrizione</label>
+        <input type="text" id="desc" name="description">
+        <label for="f-img">Immagine</label>
+        <input type="text" id="f-img" name="thumb">
+        <label for="price">Prezzo</label>
+        <input type="number" id="price" name="price">
+        <label for="serie">Serie</label>
+        <input type="text" id="serie" name="series">
+        <label for="date">data</label>
+        <input type="text" id="date" name="sale_date">
+        <button type="submit">crea</button>
+    </form>
+@endsection

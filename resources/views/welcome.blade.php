@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>comics</h1>
+    <p>Puoi vedere tutti i fumetti qui <a href="{{route('comics.index')}}">guarda i fumetti disponibili</a></p>
 </body>
 </html>
