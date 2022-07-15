@@ -14,6 +14,6 @@
         <input type="text" id="serie" name="series">
         <label for="date">data</label>
         <input type="text" id="date" name="sale_date">
-        <button type="submit">crea</button>
+        <button type="submit" class="add">crea</button>
     </form>
 @endsection

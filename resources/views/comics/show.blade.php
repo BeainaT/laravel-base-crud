@@ -10,12 +10,12 @@
             <h4>Tipologia: {{$comic->type}}</h4>
             <h4>In vendita da: {{$comic->sale_date}}</h4>
             <h4>Prezzo: {{$comic->price}} €</h4>
-            <a href="{{route('comics.edit', $comic->id)}}"><button>modifica</button></a>
+            <a href="{{route('comics.edit', $comic->id)}}"><button class="add">modifica</button></a>
             <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
                 @csrf
                 {{-- deleted method --}}
                 @method('DELETE')
-                <button type="submit">cancella</button>
+                <button class="danger" type="submit">cancella</button>
             </form>
         </li>
     </ul>

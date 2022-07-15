@@ -15,6 +15,6 @@
         <input type="text" id="serie" name="series" value="{{$comic->series}}">
         <label for="date">data</label>
         <input type="text" id="date" name="sale_date" value="{{$comic->sale_date}}">
-        <button type="submit">modifica</button>
+        <button type="submit" class="add">modifica</button>
     </form>
 @endsection
