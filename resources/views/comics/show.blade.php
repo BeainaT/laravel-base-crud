@@ -11,7 +11,7 @@
             <h4>In vendita da: {{$comic->sale_date}}</h4>
             <h4>Prezzo: {{$comic->price}} €</h4>
             <a href="{{route('comics.edit', $comic->id)}}"><button class="add">modifica</button></a>
-            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST" onsubmit="return confirm('Confermi la decisione?')">
                 @csrf
                 {{-- deleted method --}}
                 @method('DELETE')

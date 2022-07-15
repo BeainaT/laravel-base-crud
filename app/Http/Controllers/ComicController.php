@@ -98,7 +98,7 @@ class ComicController extends Controller
             'sale_date' => 'required|date',
             'type' => 'nullable|max:50',
         ]);
-        
+
         $data = $request->all();
 
         $comic->update($data);
@@ -116,6 +116,12 @@ class ComicController extends Controller
     {
         $comic->delete();
 
+        return redirect()->route('comics.index');
+    }
+
+    public function delete($id) {
+
+        Comic::all()->where('id', $id)->delete();
         return redirect()->route('comics.index');
     }
 }
