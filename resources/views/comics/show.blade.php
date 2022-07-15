@@ -10,6 +10,7 @@
             <h4>Tipologia: {{$comic->type}}</h4>
             <h4>In vendita da: {{$comic->sale_date}}</h4>
             <h4>Prezzo: {{$comic->price}} €</h4>
+            <a href="{{route('comics.edit', $comic->id)}}"><button>modifica</button></a>
         </li>
     </ul>
 @endsection
